@@ -738,7 +738,7 @@ footer .contact{
 .icon-link a img{
     margin-right: 2rem;
 }
-@media (min-width:1501px) {
+@media (min-width:1540px) {
     .app{
         max-width: 100vw !important;
         margin: 0;
