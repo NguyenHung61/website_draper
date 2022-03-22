@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./Alternate Gothic No1 D Regular/Alternate Gothic No1 D Regular.otf">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
     <div class="app">
@@ -25,6 +27,24 @@
                     <li><a href="">Accelerator</a></li>
                     <li><a href="">About us</a></li>
                 </ul>
+            </div>
+            <div class="nav-mobile">
+                <input type="checkbox">
+                <div class="menu-icon">
+                    <div class="menu-line"></div>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a href="">Cities</a></li>
+                        <li><a href="">Ventures</a></li>
+                        <li><a href="">Academy</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Accelerator</a></li>
+                        <li><a href="">About us</a></li>
+                        
+                    </ul>
+                    <div class="header-btn-mobile"><a href="">Join our community</a></div>
+                </div>
             </div>
             <div class="header-btn"><a href="">Join our community</a></div>
         </header>
@@ -110,11 +130,12 @@
             <div class="content5">
                 <div class="content5-left">
                     <h3>MEET OUR STARTUPS</h3>
-                    <div class="direc">
-                        <img src="./images/Group1.svg" alt="" class="img1">
-                        <img src="./images/Group.svg" alt="" class="img2">
+                    <div class="slider owl-carousel owl-theme">
+                        <div class="content5-img"><img src="./images/image 20.png" alt=""></div>
+                        <div class="content5-img"><img src="./images/218x130.png" alt=""></div>
+                        <div class="content5-img"><img src="./images/218x130.png" alt=""></div>
+                        
                     </div>
-                    <div class="content5-img"><img src="./images/image 20.png" alt=""></div>
                 </div>
                 <div class="content5-right">
                     <div class="above">
@@ -276,5 +297,28 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+        });
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    </script>
 </body>
 </html>
